@@ -4,8 +4,9 @@ A simple but effective package manager for wolfram language.
 To install run (you need to do this in each file you use wpm)
 
 ```mathematica
-Import["http://wpm.lize.live"];
+Import["https://wpm.lize.live"];
 ```
+(not, as of writeing https does not work yet)
 
 To use it, just import the package like your normally do.
 
