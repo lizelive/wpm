@@ -1,0 +1,8 @@
+{
+  "OurUselessString": "Example widget made possible by ExampleMod...",
+  "ComponentId": {
+    "Guid": "806fb950-1622-4130-8dd4-730e6e71cfbc",
+    "Name": "New Component"
+  },
+  "Description": "New Description"
+}

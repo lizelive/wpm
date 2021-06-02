@@ -1,0 +1,220 @@
+{
+  "ActiveBlockLink": {
+    "Reference": {
+      "Guid": "00000000-0000-0000-0000-000000000000",
+      "Name": ""
+    },
+    "IsValidReference": false
+  },
+  "Sounds": {
+    "ViewTheseOptions": false,
+    "Sounds": [],
+    "SoundCount": 0
+  },
+  "SubObjects": {
+    "ViewTheseOptions": false,
+    "SubObjectCount": 0,
+    "SubObjects": []
+  },
+  "MeshReference": {
+    "Reference": {
+      "Guid": "d2b4f5e2-6b5f-4960-b683-6847612122a3",
+      "Name": "Nuclear Engine Core"
+    },
+    "IsValidReference": true
+  },
+  "MaterialReference": {
+    "Reference": {
+      "Guid": "37cdc0ab-3ded-4234-a526-f44d8c3464dc",
+      "Name": "nuclear mat"
+    },
+    "IsValidReference": true
+  },
+  "MirrorLaterialFlipReplacementReference": {
+    "Reference": {
+      "Guid": "00000000-0000-0000-0000-000000000000",
+      "Name": ""
+    },
+    "IsValidReference": false
+  },
+  "MirrorVerticalFlipReplacementReference": {
+    "Reference": {
+      "Guid": "00000000-0000-0000-0000-000000000000",
+      "Name": ""
+    },
+    "IsValidReference": false
+  },
+  "SizeInfo": {
+    "ViewTheseOptions": false,
+    "SizePos": {
+      "x": 1,
+      "y": 2,
+      "z": 1
+    },
+    "SizeNeg": {
+      "x": 1,
+      "y": 0,
+      "z": 1
+    },
+    "VolumeFactor": 1.0,
+    "VolumeBuoyancyExtraFactor": 1.0,
+    "ArrayPositionsUsed": 27,
+    "LocalCenter": "0,1,0"
+  },
+  "AttachDirections": {
+    "Up": false,
+    "Down": true,
+    "Right": true,
+    "Left": true,
+    "Forwards": true,
+    "Back": true
+  },
+  "SupportDirections": {
+    "Up": false,
+    "Down": false,
+    "Right": false,
+    "Left": false,
+    "Forwards": false,
+    "Back": false
+  },
+  "AllowAttachingDirections": null,
+  "Weight": 27.0,
+  "Health": 500.0,
+  "ArmourClass": 8.0,
+  "eRadarCrossSection": 30,
+  "RadarRelativeCrossSection": 0.03,
+  "ExtraSettings": {
+    "CreateListOfTheseBlocks": true,
+    "UseCustomName": false,
+    "ExplosionOnDeath": 5,
+    "ViewTheseOptions": false,
+    "UseALowLodRender": true,
+    "WaterTight": true,
+    "BlockPathfinding": true,
+    "ViewMeshWhenPlacing": true,
+    "LocalRotationToForward": false,
+    "InventoryLinkUp": false,
+    "InventoryLinkDown": false,
+    "InventoryLinkLeft": false,
+    "InventoryLinkRight": false,
+    "PlaceableOnFortress": true,
+    "PlaceableOnStructure": true,
+    "PlaceableOnVehicle": true,
+    "PlaceableOnSubConstructable": 1,
+    "AutomaticallyGenerateCollider": true,
+    "StructuralComponent": false,
+    "EmpSusceptibility": 0.0,
+    "EmpResistivity": 2.0,
+    "EmpDamageFactor": 1.0,
+    "FractionHeatDamagePerMeterPenetration": 0.05,
+    "AllowsExhaust": false,
+    "AllowsVisibleBandTransmission": false,
+    "AllowsIrBandTransmission": false,
+    "AllowsRadarBandTransmission": true,
+    "AllowsSonarBandTransmission": false,
+    "RenderInImportantView": false
+  },
+  "DragSettings": {
+    "DragClearancePositions": [],
+    "DragFactorNeg": "1,1,1",
+    "DragFactorPos": "1,1,1",
+    "DragStopper": true,
+    "ViewTheseOptions": false,
+    "Geometry": 0
+  },
+  "Code": {
+    "GroupConnectionInfo": {
+      "BlockGroupReference": {
+        "Reference": {
+          "Guid": "471450a3-89d2-4070-bd8d-efbcea12bb81",
+          "Name": "Boilers"
+        },
+        "IsValidReference": false
+      },
+      "ViewTheseOptions": true,
+      "MatchCoreBlockOrientation": false,
+      "ReceiveDirections": {
+        "Up": false,
+        "Down": false,
+        "Right": true,
+        "Left": true,
+        "Forwards": true,
+        "Back": true
+      },
+      "SendDirections": {
+        "Up": false,
+        "Down": false,
+        "Right": true,
+        "Left": true,
+        "Forwards": true,
+        "Back": true
+      },
+      "ExtraRightUpForwardElementJumps": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "ExtraLeftDownBackElementJumps": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "SpreadToTypePermissions": "10000000000000000000000000000000"
+    },
+    "ViewTheseOptions": true,
+    "Variables": {
+      "Variables": [
+        {
+          "Id": 0,
+          "Value": 0.0,
+          "Name": "Size"
+        }
+      ],
+      "VariableCount": 1
+    },
+    "ClassName": "NuclearAllInOne"
+  },
+  "ItemType": 0,
+  "LowLevelOfDetailColor": "1,1,1,1",
+  "DisplayName": "###NuclearBoiler.55d183fc-fb5e-47d2-98bd-7f7366deb809_displayName#?!Nuclear Engine Core",
+  "InventoryNameOverride": "###NuclearBoiler.55d183fc-fb5e-47d2-98bd-7f7366deb809_inventoryNameOverride#?!Nuclear Engine Core",
+  "InventoryCategoryNameOverride": "",
+  "DisplayOnInventory": true,
+  "InventoryXPosition": 6,
+  "InventoryYPosition": 6,
+  "InventoryTabOrVariantId": {
+    "Reference": {
+      "Guid": "c105cfc3-1712-4d20-9ba9-3aedfc805007",
+      "Name": "Miscellaneous"
+    },
+    "IsValidReference": true
+  },
+  "IconReference": {
+    "Reference": {
+      "Guid": "00000000-0000-0000-0000-000000000000",
+      "Name": ""
+    },
+    "IsValidReference": false
+  },
+  "Complexity": 3,
+  "Unlock": null,
+  "HelpPageIdentifierReference": {
+    "Reference": {
+      "Guid": "00000000-0000-0000-0000-000000000000",
+      "Name": ""
+    },
+    "IsValidReference": false
+  },
+  "ExternalLink": {
+    "Name": "",
+    "Url": ""
+  },
+  "Cost": {
+    "Material": 25000.0
+  },
+  "ComponentId": {
+    "Guid": "55d183fc-fb5e-47d2-98bd-7f7366deb809",
+    "Name": "Nuclear Boiler"
+  },
+  "Description": "###NuclearBoiler.55d183fc-fb5e-47d2-98bd-7f7366deb809_description#?!The primary component in a Nuclear Engine. <color=cyan>Warning: Highly explosive.</color>"
+}

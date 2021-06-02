@@ -1,0 +1,10 @@
+{
+  "_comments": "this comment field is just to help a modder. filename is the filename of the dll. game version is the version of the game whose dll's the mod was built against. depends can be a list of names of mods this mod requires. Please put the actual game version in, not 6.6.6.",
+  "name": "ExampleMod",
+  "version": "0",
+  "depends": [""],
+  "conflicts": [],
+  "filename": "ExampleMod/ExampleMod/bin/Debug/NuclearReactor.dll",
+  "gameversion": "6.6.6"
+}
+

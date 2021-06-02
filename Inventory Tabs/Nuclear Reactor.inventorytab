@@ -1,0 +1,24 @@
+{
+  "DisplayName": "###NuclearBoiler.87a94c51-0d66-4dd3-ae9f-bc36de628cf7_displayName#?!Nuclear Engines",
+  "ScreenSpacingBeforeTab": 0.0,
+  "ScreenSpacingAfterTab": 0.0,
+  "BuildGuides": {
+    "Guides": []
+  },
+  "Complexity": 0,
+  "DesiredOrder": 7,
+  "PreviewWindowCoords": {
+    "x": 0,
+    "y": 0,
+    "z": 9,
+    "w": 6,
+    "sqrMagnitude": 117
+  },
+  "ToBeDisplayed": true,
+  "CustomScriptName": "",
+  "ComponentId": {
+    "Guid": "87a94c51-0d66-4dd3-ae9f-bc36de628cf7",
+    "Name": "Nuclear Reactor"
+  },
+  "Description": "###NuclearBoiler.87a94c51-0d66-4dd3-ae9f-bc36de628cf7_description#?!Nuclear Engine components, which when combined create an extraordinary amount of power."
+}
