@@ -1,5 +1,5 @@
 {
-  "DisplayName": "###NuclearBoiler.87a94c51-0d66-4dd3-ae9f-bc36de628cf7_displayName#?!Nuclear Engines",
+  "DisplayName": "###NuclearBoiler.87a94c51-0d66-4dd3-ae9f-bc36de628cf7_displayName#?!Nuclear Reactors",
   "ScreenSpacingBeforeTab": 0.0,
   "ScreenSpacingAfterTab": 0.0,
   "BuildGuides": {
@@ -20,5 +20,5 @@
     "Guid": "87a94c51-0d66-4dd3-ae9f-bc36de628cf7",
     "Name": "Nuclear Reactor"
   },
-  "Description": "###NuclearBoiler.87a94c51-0d66-4dd3-ae9f-bc36de628cf7_description#?!Nuclear Engine components, which when combined create an extraordinary amount of power."
+  "Description": "###NuclearBoiler.87a94c51-0d66-4dd3-ae9f-bc36de628cf7_description#?!Nuclear Reactor components, which when combined create an extraordinary amount of power."
 }

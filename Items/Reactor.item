@@ -176,16 +176,16 @@
   },
   "ItemType": 0,
   "LowLevelOfDetailColor": "1,1,1,1",
-  "DisplayName": "###NuclearBoiler.55d183fc-fb5e-47d2-98bd-7f7366deb809_displayName#?!Nuclear Engine Core",
-  "InventoryNameOverride": "###NuclearBoiler.55d183fc-fb5e-47d2-98bd-7f7366deb809_inventoryNameOverride#?!Nuclear Engine Core",
+  "DisplayName": "###NuclearBoiler.55d183fc-fb5e-47d2-98bd-7f7366deb809_displayName#?!Nuclear Boiler",
+  "InventoryNameOverride": "###NuclearBoiler.55d183fc-fb5e-47d2-98bd-7f7366deb809_inventoryNameOverride#?!Nuclear Boiler",
   "InventoryCategoryNameOverride": "",
   "DisplayOnInventory": true,
   "InventoryXPosition": 6,
   "InventoryYPosition": 6,
   "InventoryTabOrVariantId": {
     "Reference": {
-      "Guid": "c105cfc3-1712-4d20-9ba9-3aedfc805007",
-      "Name": "Miscellaneous"
+      "Guid": "87a94c51-0d66-4dd3-ae9f-bc36de628cf7",
+      "Name": "Nuclear Reactor"
     },
     "IsValidReference": true
   },
@@ -216,5 +216,5 @@
     "Guid": "55d183fc-fb5e-47d2-98bd-7f7366deb809",
     "Name": "Nuclear Boiler"
   },
-  "Description": "###NuclearBoiler.55d183fc-fb5e-47d2-98bd-7f7366deb809_description#?!The primary component in a Nuclear Engine. <color=cyan>Warning: Highly explosive.</color>"
+  "Description": "###NuclearBoiler.55d183fc-fb5e-47d2-98bd-7f7366deb809_description#?!A self contined Nuclear Boiler <color=cyan>Warning: Highly explosive.</color>"
 }

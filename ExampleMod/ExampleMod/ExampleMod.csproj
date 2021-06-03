@@ -127,9 +127,7 @@
   <ItemGroup>
     <Compile Include="ExampleModPlugin.cs" />
     <Compile Include="NuclearAllInOne.cs" />
-    <Compile Include="Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="NuclearBoilerController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
