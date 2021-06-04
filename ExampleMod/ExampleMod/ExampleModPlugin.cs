@@ -19,18 +19,18 @@ namespace CultOfClang.NuclearReactor
     {
 
 
-        //public void OnLoad()
-        //{
-        //    AdvLogger.LogInfo("Loaded Example Mod");
-        //}
+        public void OnLoad()
+        {
+            AdvLogger.LogInfo("Loaded Example Mod");
+        }
 
-        ///// <summary>
-        ///// Not currently called from anywhere in FTD.
-        ///// </summary>
-        //public void OnSave()
-        //{
-        //    AdvLogger.LogInfo("Saved Example Mod");
-        //}
+        /// <summary>
+        /// Not currently called from anywhere in FTD.
+        /// </summary>
+        public void OnSave()
+        {
+            AdvLogger.LogInfo("Saved Example Mod");
+        }
 
 
         /// <summary>

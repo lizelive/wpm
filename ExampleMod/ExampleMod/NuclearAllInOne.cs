@@ -1,21 +1,26 @@
 ﻿
 using BrilliantSkies.Blocks.SteamEngines.Ui;
 using BrilliantSkies.Core.Timing;
+using BrilliantSkies.Ftd.Constructs.Modules.All.StandardExplosion;
 using BrilliantSkies.Ftd.Constructs.Modules.Main.Power;
 using BrilliantSkies.Ftd.DamageLogging;
+using BrilliantSkies.Ftd.DamageModels;
 using BrilliantSkies.Localisation;
 using BrilliantSkies.Localisation.Runtime.FileManagers.Files;
 using BrilliantSkies.Ui.Tips;
 using System;
+using UnityEngine;
 
 namespace CultOfClang.NuclearReactor
 {
     public class NuclearAllInOne : SteamTank
     {
         public new static ILocFile _locFile = Loc.GetFile("NuclearAllInOne");
+        private bool _detonated;
         const float MultiplyerPowerDensity = 100; // normal is 15 real can do 100mw/m^3
         const float HeatPerVolume = 40;
-
+        private static float ExplosionDamage { get; } = 500000f;
+        private static float ExplosionRadius { get; } = PayloadDerivedValues.GetExplosionRadius(ExplosionDamage);
         public float RtgVolume => MultiplyerPowerDensity * (float)this.item.SizeInfo.ArrayPositionsUsed;
         public float SteamPerSecond => 1000 * (float)this.item.SizeInfo.ArrayPositionsUsed;
 
@@ -36,7 +41,7 @@ namespace CultOfClang.NuclearReactor
             {
                 this.MainConstruct.PowerUsageCreationAndFuelRestricted.RtgVolume += RtgVolume;
                 this.MainConstruct.HotObjectsRestricted.AddASimpleSourceOfBodyHeat(HeatChange);
-                this.MainConstruct.SchedulerRestricted.RegisterFor1PerSecond(Update);
+                this.MainConstruct.SchedulerRestricted.RegisterForFixedUpdate(Update);
 
             }
             else
@@ -45,13 +50,24 @@ namespace CultOfClang.NuclearReactor
                     return;
                 this.MainConstruct.PowerUsageCreationAndFuelRestricted.RtgVolume -= RtgVolume;
                 this.MainConstruct.HotObjectsRestricted.RemoveASimpleSourceofBodyHeat(HeatChange);
-                this.MainConstruct.SchedulerRestricted.UnregisterFor1PerSecond(Update);
+                this.MainConstruct.SchedulerRestricted.UnregisterForFixedUpdate(Update);
 
             }
         }
 
         private float HeatChange => (float)(this.item.SizeInfo.ArrayPositionsUsed * HeatPerVolume);
-       
+
+        public void Detonate()
+        {
+            if (this._detonated)
+                return;
+            this._detonated = true;
+            ExplosionCreator.Explosion((IAllConstructBlock)this.MainConstruct, new ExplosionDamageDescription(this.MainConstruct.GunnerReward, ExplosionDamage, ExplosionRadius, this.GameWorldPosition)
+            {
+                SolidCoordLink = new SolidCoord(this.GetConstructableOrSubConstructable(), this.LocalPosition)
+            });
+            UnityEngine.Object.Instantiate(Resources.Load("Detonator-MushroomCloud"), this.GameWorldPosition, Quaternion.identity);
+        }
 
         public override BlockTechInfo GetTechInfo()
         {
@@ -66,11 +82,12 @@ namespace CultOfClang.NuclearReactor
 
         private void Update(ISectorTimeStep obj)
         {
+            //this.GetConstructableOrSubConstructable().MainThreadRotation = Quaternion.identity;
             var steam = obj.DeltaTime * SteamPerSecond;
             this.StorageModule.AddSteam(steam);
             this.Stats.BoilerSteamCreated.Add(steam);
-            if(StorageModule.Pressure > 9)
-                this.ExplodeBlock(new BaseDamageLogger());
+            if (StorageModule.Pressure > 9)
+                Detonate();
         }
     }
 }
